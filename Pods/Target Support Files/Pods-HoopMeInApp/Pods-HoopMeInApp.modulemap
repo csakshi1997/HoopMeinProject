@@ -1,0 +1,6 @@
+framework module Pods_HoopMeInApp {
+  umbrella header "Pods-HoopMeInApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
