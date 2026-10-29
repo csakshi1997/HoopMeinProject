@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+    
+    <!-- SANDBOX CONFIGURATION -->
+
+<!--    <key>remoteAccessConsumerKey</key>-->
+<!--    <string>3MVG98dostKihXN53TYStBIiS8FC2a3tE3XhGId0hQ37iQjF0xe4fxMSb2mFaWZn9e3GiLs1q67TNlyRji.Xw</string>-->
+<!---->
+<!--    <key>oauthRedirectURI</key>-->
+<!--    <string>testsfdc:///mobilesdk/detect/oauth/done</string>-->
+    
+    <!-- UAT CONFIGURATION -->
+
+<!--    <key>remoteAccessConsumerKey</key>-->
+<!--    <string>3MVG9W9vk6TO04vZJ9hehF0iVBAUXipjQaf5sJ3QPXzjEzDnqdoDGz5e4.Hyj78cwxFN8SQPQN0Hveu5FbSI2</string>-->
+<!---->
+<!--    <key>oauthRedirectURI</key>-->
+<!--    <string>testsfdc://test.salesforce.com/mobilesdk/detect/oauth/done</string>-->
+    
+    <!-- PRODUCTION CONFIGURATION -->
+
     <key>remoteAccessConsumerKey</key>
     <string>3MVG9RGN2EqkAxhJcefY0zQDmusOaghTywz_lpRRWuvNiRzyFpaDeWIVdNIVwJlR5mWWVjAvNkX9dKp3Cc.Bp</string>
+
     <key>oauthRedirectURI</key>
-    <string>https://login.salesforce.com/callback</string>
+    <string>testsfdc://login.salesforce.com/mobilesdk/detect/oauth/done</string>
+
     <key>oauthScopes</key>
     <array>
-        <string>web</string>
         <string>api</string>
+        <string>web</string>
     </array>
+
     <key>shouldAuthenticate</key>
     <true/>
 </dict>

@@ -188,7 +188,7 @@ class UserWebService {
         Task {
             do {
                 let response = try await webRequest.post(
-                    path: "https://ability-site-6979.my.salesforce.com/services/apexrest/Attendance__c",
+                    path: "\(Defaults.instanceUrl ?? EMPTY)/services/apexrest/Attendance__c",
                     body: payload
                 )
                 

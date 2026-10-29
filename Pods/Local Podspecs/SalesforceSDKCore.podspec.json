@@ -1,6 +1,6 @@
 {
   "name": "SalesforceSDKCore",
-  "version": "13.1.0",
+  "version": "13.2.1",
   "summary": "Salesforce Mobile SDK for iOS",
   "homepage": "https://github.com/forcedotcom/SalesforceMobileSDK-iOS",
   "license": {
@@ -19,7 +19,7 @@
   ],
   "source": {
     "git": "https://github.com/forcedotcom/SalesforceMobileSDK-iOS.git",
-    "tag": "v13.1.0"
+    "tag": "v13.2.1"
   },
   "requires_arc": true,
   "default_subspecs": "SalesforceSDKCore",
@@ -28,7 +28,7 @@
       "name": "SalesforceSDKCore",
       "dependencies": {
         "SalesforceAnalytics": [
-          "~>13.1.0"
+          "~>13.2.1"
         ]
       },
       "libraries": "z",
@@ -58,20 +58,20 @@
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/NSString+SFAdditions.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/NSURL+SFAdditions.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/NSURLResponse+SFAdditions.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SalesforceSDKConstants.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SalesforceSDKManager.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SFFormatUtils.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SFSDKAppConfig.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SFSDKAppFeatureMarkers.h",
+        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SalesforceSDKConstants.h",
+        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/SalesforceSDKManager.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/UIDevice+SFHardware.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Common/UIScreen+SFAdditions.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Identity/SFIdentityCoordinator.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Identity/SFIdentityData.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/IDP/SFSDKLoginFlowSelectionView.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/IDP/SFSDKUITableViewCell.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/IDP/SFSDKUserSelectionNavViewController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/IDP/SFSDKUserSelectionTableViewController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/IDP/SFSDKUserSelectionView.h",
+        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Identity/SFIdentityCoordinator.h",
+        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Identity/SFIdentityData.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Instrumentation/SFInstrumentation.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Instrumentation/SFMethodInterceptor.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Instrumentation/SFSDKInstrumentationHelper.h",
@@ -90,11 +90,11 @@
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/PushNotification/SFSDKPushNotificationError.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/PushNotification/SFSDKPushNotificationFieldsConstants.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFNetwork.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestAPI.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestAPI+Blocks.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestAPI+Files.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestAPI+Notifications.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestAPI+QueryBuilder.h",
+        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestAPI.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFRestRequest.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFSDKBatchRequest.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/RestAPI/SFSDKBatchResponse.h",
@@ -117,7 +117,6 @@
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/UserAccount/ViewControllers/SFDefaultUserManagementListViewController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/UserAccount/ViewControllers/SFDefaultUserManagementViewController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/NSURL+SFStringUtils.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SalesforceSDKCoreDefines.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SFApplicationHelper.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SFDirectoryManager.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SFManagedPreferences.h",
@@ -133,10 +132,10 @@
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SFSDKSoslReturningBuilder.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SFSDKViewControllerConfig.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SFSDKWebUtils.h",
+        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/SalesforceSDKCoreDefines.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Util/UIColor+SFColors.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Views/SFSDKAlertMessage.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Views/SFSDKAlertMessageBuilder.h",
-        "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Views/SFSDKDevInfoViewController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Views/SFSDKNavigationController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Views/SFSDKViewController.h",
         "libs/SalesforceSDKCore/SalesforceSDKCore/Classes/Views/SFSDKWindowContainer.h",

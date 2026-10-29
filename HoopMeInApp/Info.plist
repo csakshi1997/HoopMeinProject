@@ -40,6 +40,16 @@
 				<string>hoopmeinsdk</string>
 			</array>
 		</dict>
+<!--		<dict>-->
+<!--			<key>CFBundleTypeRole</key>-->
+<!--			<string>Editor</string>-->
+<!--			<key>CFBundleURLName</key>-->
+<!--			<string>com.salesforce.HoopMeInApp.uat</string>-->
+<!--			<key>CFBundleURLSchemes</key>-->
+<!--			<array>-->
+<!--				<string>testsfdc</string>-->
+<!--			</array>-->
+<!--		</dict>-->
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
@@ -54,7 +64,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>The app needs your location for Punch In.</string>
 	<key>SFDCOAuthLoginHost</key>
-	<string>login.salesforce.com</string>
+	<string>test.salesforce.com</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

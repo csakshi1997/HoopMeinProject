@@ -1,6 +1,6 @@
 {
   "name": "SmartStore",
-  "version": "13.1.0",
+  "version": "13.2.1",
   "summary": "Salesforce Mobile SDK for iOS - SmartStore",
   "homepage": "https://github.com/forcedotcom/SalesforceMobileSDK-iOS",
   "license": {
@@ -19,7 +19,7 @@
   ],
   "source": {
     "git": "https://github.com/forcedotcom/SalesforceMobileSDK-iOS.git",
-    "tag": "v13.1.0"
+    "tag": "v13.2.1"
   },
   "requires_arc": true,
   "default_subspecs": "SmartStore",
@@ -28,7 +28,7 @@
       "name": "SmartStore",
       "dependencies": {
         "SalesforceSDKCore": [
-          "~>13.1.0"
+          "~>13.2.1"
         ],
         "FMDB/SQLCipher": [
           "~> 2.7.12"

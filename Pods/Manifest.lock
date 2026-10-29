@@ -105,30 +105,30 @@ PODS:
     - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
     - "MaterialComponents/TextControls+BaseTextFields"
   - MDFInternationalization (3.0.0)
-  - MobileSync (13.1.0):
-    - MobileSync/MobileSync (= 13.1.0)
-  - MobileSync/MobileSync (13.1.0):
-    - SmartStore (~> 13.1.0)
-  - SalesforceAnalytics (13.1.0):
-    - SalesforceAnalytics/SalesforceAnalytics (= 13.1.0)
-  - SalesforceAnalytics/SalesforceAnalytics (13.1.0):
-    - SalesforceSDKCommon (~> 13.1.0)
-  - SalesforceSDKCommon (13.1.0):
-    - SalesforceSDKCommon/SalesforceSDKCommon (= 13.1.0)
-  - SalesforceSDKCommon/SalesforceSDKCommon (13.1.0)
-  - SalesforceSDKCore (13.1.0):
-    - SalesforceSDKCore/SalesforceSDKCore (= 13.1.0)
-  - SalesforceSDKCore/SalesforceSDKCore (13.1.0):
-    - SalesforceAnalytics (~> 13.1.0)
+  - MobileSync (13.2.1):
+    - MobileSync/MobileSync (= 13.2.1)
+  - MobileSync/MobileSync (13.2.1):
+    - SmartStore (~> 13.2.1)
+  - SalesforceAnalytics (13.2.1):
+    - SalesforceAnalytics/SalesforceAnalytics (= 13.2.1)
+  - SalesforceAnalytics/SalesforceAnalytics (13.2.1):
+    - SalesforceSDKCommon (~> 13.2.1)
+  - SalesforceSDKCommon (13.2.1):
+    - SalesforceSDKCommon/SalesforceSDKCommon (= 13.2.1)
+  - SalesforceSDKCommon/SalesforceSDKCommon (13.2.1)
+  - SalesforceSDKCore (13.2.1):
+    - SalesforceSDKCore/SalesforceSDKCore (= 13.2.1)
+  - SalesforceSDKCore/SalesforceSDKCore (13.2.1):
+    - SalesforceAnalytics (~> 13.2.1)
   - SDWebImage (5.21.5):
     - SDWebImage/Core (= 5.21.5)
   - SDWebImage/Core (5.21.5)
   - SideMenu (6.5.0)
-  - SmartStore (13.1.0):
-    - SmartStore/SmartStore (= 13.1.0)
-  - SmartStore/SmartStore (13.1.0):
+  - SmartStore (13.2.1):
+    - SmartStore/SmartStore (= 13.2.1)
+  - SmartStore/SmartStore (13.2.1):
     - FMDB/SQLCipher (~> 2.7.12)
-    - SalesforceSDKCore (~> 13.1.0)
+    - SalesforceSDKCore (~> 13.2.1)
     - SQLCipher (~> 4.10.0)
   - SQLCipher (4.10.0):
     - SQLCipher/standard (= 4.10.0)
@@ -225,13 +225,13 @@ SPEC CHECKSUMS:
   IQTextView: ae13b4922f22e6f027f62c557d9f4f236b19d5c7
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: d697c55307816222a55685c4ccb1044ffb030c12
-  MobileSync: 3e8727fe0be944c2901c5ab5972dc863db0fcc02
-  SalesforceAnalytics: 3ca77d5b2ee7d2d680ad7038d96fbbf96b2e4c49
-  SalesforceSDKCommon: 1b095c0c20a79f00af8933e64db10514689b7322
-  SalesforceSDKCore: 72a56fb144c5f0c61fdc93b228804f8c306a5455
+  MobileSync: 94247e68ccee4894f3fef7e55a3cc48d29f83090
+  SalesforceAnalytics: b9bb31bea59a2d219e130bce404dd36406369441
+  SalesforceSDKCommon: 1b63af33d33b8f929ff61c974b822a3411321259
+  SalesforceSDKCore: 42a94bd8e8a06bbac892f0e4e4c68524938d0dac
   SDWebImage: e9c98383c7572d713c1a0d7dd2783b10599b9838
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
-  SmartStore: 60a64353394ec0431e35c5e300bbe25db1ea2e56
+  SmartStore: 6f12a6deab454f5e56be46446d2edcfee747120b
   SQLCipher: eb79c64049cb002b4e9fcb30edb7979bf4706dfc
   SQLite.swift: c38c92f61436f1a4053029550edb1ef7caa2a2cd
   SSDateTimePicker: 938b46c386778aafb414fbb8adb9d68a0723734c

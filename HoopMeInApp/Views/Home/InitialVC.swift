@@ -48,63 +48,7 @@ class InitialVC: UIViewController, CLLocationManagerDelegate {
             view.addSubview(statusBarView)
         }
     }
-            
-//    func fetchUserDetails() {
-//
-//        guard let user = UserAccountManager.shared.currentUserAccount else {
-//            print("❌ No Salesforce user account")
-//            return
-//        }
-//
-//        let credentials = user.credentials
-//
-//        Defaults.accessToken = credentials.accessToken
-//        Defaults.refreshToken = credentials.refreshToken
-//        Defaults.instanceUrl = credentials.instanceUrl?.absoluteString
-//        Defaults.userId = credentials.userId
-//        Defaults.domain = credentials.domain
-//
-//        print("======================================")
-//        print("🔐 Salesforce Credentials")
-//        print("======================================")
-//        print("User ID:", Defaults.userId ?? "")
-//        print("Instance URL:", Defaults.instanceUrl ?? "")
-//        print("Access Token:", Defaults.accessToken ?? "")
-//        print("======================================")
-//
-//        userWebService.fetchCurrentSalesforceUserDetails { error, response, statusCode in
-//
-//            if statusCode == .success {
-//
-//                let responseDict = response ?? [:]
-//
-//                Defaults.name = responseDict["Name"] as? String
-//                Defaults.userEmail = responseDict["Email"] as? String
-//                Defaults.userName = responseDict["Username"] as? String
-//
-//                DispatchQueue.main.async {
-//                    self.nameLbl?.text = Defaults.name
-//                }
-//
-//                // Now userId is definitely available
-//                self.checkIsPunchInFromSaleforce { [weak self] isPunchedIn in
-//                    
-//                    guard let self = self else { return }
-//
-//                    if isPunchedIn {
-//                        print("✅ YES — Already punched in")
-//                        return
-//                    }
-//                    self.continuePunchInFlow()
-//                }
-//            } else {
-//
-//                print("❌ Failed to fetch Salesforce user details")
-//                print("❌ Error:", error ?? "Unknown error")
-//            }
-//        }
-//    }
-    
+                
     func fetchUserDetails() {
 
         // 1️⃣ Get logged-in Salesforce account
@@ -115,12 +59,23 @@ class InitialVC: UIViewController, CLLocationManagerDelegate {
 
         // 2️⃣ Save Salesforce credentials
         let credentials = user.credentials
-
-        Defaults.accessToken = credentials.accessToken
-        Defaults.refreshToken = credentials.refreshToken
+print(user.credentials)
         Defaults.instanceUrl = credentials.instanceUrl?.absoluteString
         Defaults.userId = credentials.userId
         Defaults.domain = credentials.domain
+        if let token = credentials.accessToken, !token.isEmpty {
+            print("✅ Salesforce access token is available")
+            print("Access token length: \(token)")
+            Defaults.accessToken = token
+        } else {
+            print("❌ Salesforce access token is missing")
+        }
+        print("Salesforce User ID:", credentials.userId ?? "")
+        print("Salesforce Domain:", credentials.domain ?? "")
+        print("Salesforce Instance URL:",
+              credentials.instanceUrl?.absoluteString ?? "")
+        print("Salesforce Organization ID:",
+              credentials.organizationId ?? "")
 
         print("======================================")
         print("🔐 Salesforce Credentials")
@@ -221,7 +176,7 @@ class InitialVC: UIViewController, CLLocationManagerDelegate {
 
         let payload: [String: Any] = [
             "userId": userId,
-            "attendanceDate": "2026-08-05"
+            "attendanceDate": "2026-10-20"
         ]
 
         userWebService.checkPunchInFromSaleforce(

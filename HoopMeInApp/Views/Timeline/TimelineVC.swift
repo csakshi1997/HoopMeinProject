@@ -46,8 +46,8 @@ class TimelineVC: UIViewController {
     }
     
     @objc private func refreshTimeline() {
-        // Live refresh disabled — keep list stable after server/local load.
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         addMapButtonWithoutBreakingConstraints()
@@ -223,7 +223,7 @@ class TimelineVC: UIViewController {
         loadTimelineForSelectedDate()
     }
 
-    /// Cancels any in-flight load so an older response cannot hide a newer list.
+    // Cancels any in-flight load so an older response cannot hide a newer list.
     private func loadTimelineForSelectedDate() {
         timelineTask?.cancel()
         timelineLoadGeneration += 1
@@ -257,7 +257,7 @@ class TimelineVC: UIViewController {
         tableView.reloadData()
     }
 
-    /// Loads Timeline rows previously saved from server for this date.
+    // Loads Timeline rows previously saved from server for this date.
     @MainActor
     @discardableResult
     private func showCachedTimelineFromDatabase(for date: String) -> Bool {
